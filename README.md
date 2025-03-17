@@ -1,6 +1,6 @@
 # COMP-S313F---Android-Application-Programming
 
-# COMP-S313F
+
 Mobile Application Programming: Year 3 Group Project.
 
 ## Mobile Web Development & Application Design
