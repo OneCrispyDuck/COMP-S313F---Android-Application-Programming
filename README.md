@@ -1,6 +1,5 @@
 # COMP-S313F---Android-Application-Programming
 
-```bash
 # COMP-S313F
 Mobile Application Programming: Year 3 Group Project.
 
@@ -40,10 +39,10 @@ By the end of the project, the group is expected to deliver a functional mobile 
 
 ## Features
 - Responsive web design for adaptive mobile websites
-- Use of HTML5 local storage for offline capabilities [[1]](https://poe.com/citation?message_id=361592497608&citation=1)
+- Use of HTML5 local storage for offline capabilities 
 - Basic mobile app prototypes for Android and iOS platforms
-- Deployment-ready .apk files for Android devices [[3]](https://poe.com/citation?message_id=361592497608&citation=3)
-- CSS media queries for mobile-friendly layouts [[4]](https://poe.com/citation?message_id=361592497608&citation=4)
+- Deployment-ready .apk files for Android devices 
+- CSS media queries for mobile-friendly layouts
 
 ## Getting Started
 
@@ -83,15 +82,15 @@ cordova platform add ios
 ### Usage
 1. **Mobile Web Development**
     - Use HTML, CSS, and JavaScript to create adaptive websites.
-    - Implement responsive web design techniques using media queries [[1]](https://poe.com/citation?message_id=361592497608&citation=1)[[4]](https://poe.com/citation?message_id=361592497608&citation=4).
+    - Implement responsive web design techniques using media queries 
     - Test the adaptive layout across different devices and screen sizes.
 
 2. **Native Application Development**
-    - Develop Android apps using Android Studio and the Cordova framework [[2]](https://poe.com/citation?message_id=361592497608&citation=2)[[3]](https://poe.com/citation?message_id=361592497608&citation=3).
-    - Use iOS development tools like Xcode for iPhone applications [[2]](https://poe.com/citation?message_id=361592497608&citation=2).
+    - Develop Android apps using Android Studio and the Cordova framework 
+    - Use iOS development tools like Xcode for iPhone applications 
     - Build your app using the following commands:
-      - `cordova build android` for Android [[3]](https://poe.com/citation?message_id=361592497608&citation=3)
-      - `cordova build ios` for iOS [[3]](https://poe.com/citation?message_id=361592497608&citation=3)
+      - `cordova build android` for Android 
+      - `cordova build ios` for iOS 
 
 ### Configuration
 ```json
@@ -111,10 +110,10 @@ cordova platform add ios
 
 ### Testing and Deployment
 1. Test your app on both web browsers and mobile devices:
-   - Open the `index.html` file in a browser for web testing [[3]](https://poe.com/citation?message_id=361592497608&citation=3).
-   - Use mobile emulators in Android Studio or Xcode for native app testing [[2]](https://poe.com/citation?message_id=361592497608&citation=2).
+   - Open the `index.html` file in a browser for web testing 
+   - Use mobile emulators in Android Studio or Xcode for native app testing
 2. Deploy the Android app:
-   - Locate the `.apk` file in the `outputs` directory and transfer it to a device [[3]](https://poe.com/citation?message_id=361592497608&citation=3).
+   - Locate the `.apk` file in the `outputs` directory and transfer it to a device
    - Test and verify installation and functionality on Android devices.
 
 ### Contributing
