@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">你的应用名称</string>
+    <string name="google_maps_key">AIzaSyDeZLXmQFT4kQTVQh6MUw4--1xYvRqRzy8</string>
+    <!-- 出行方式选项 -->
+    <string-array name="transport_modes">
+        <item>公交（默认）</item>
+        <item>地铁</item>
+        <item>巴士</item>
+        <item>小巴</item>
+        <item>步行</item>
+    </string-array>
+</resources>
