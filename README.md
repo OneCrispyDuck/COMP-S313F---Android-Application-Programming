@@ -140,81 +140,114 @@ The following is the recommended directory and file structure for the COMP-S313F
 ## Root Directory
 ```
 mobile-app-project/
-├── www/
-├── platforms/
-├── plugins/
-├── config.xml
-├── package.json
+├── app/
+│   ├── build/
+│   └── src/
+│       ├── build.gradle.kts
+│       └── proguard-rules.pro
+├── gradle/
+│   └── wrapper/
+│       └── libs.versions.toml
+├── .git/
+│   ├── branches/
+│   ├── hooks/
+│   ├── objects/
+│   └── refs/
+├── .idea/
+│   ├── caches/
+│   └── workspace.xml
+├── gradlew
+├── gradlew.bat
+├── build.gradle.kts
+├── settings.gradle.kts
 ├── README.md
 └── .gitignore
 ```
 
 ### Description of Folders and Files:
 
-1. **`www/`**
-   - Contains all the web-based assets including HTML, CSS, and JavaScript files for the application.
+1. app/
+- Contains the source code and build files for the Android app.
+- src/: Houses the main application logic and configuration files, including build.gradle.kts and proguard-rules.pro.
+2. gradle/
+- Contains Gradle wrapper files for managing build scripts and dependencies.
+3. .git/
+- Git directory for version control, including branches, commits, and hooks.
+4. .idea/
+- IntelliJ IDEA project configuration files.
+5. build.gradle.kts and settings.gradle.kts
+- Project-wide Gradle configuration and settings.
+
+1. **`app/`**
+   - Contains the main source code and build files for the Android application.
    - Example structure:
      ```
-     www/
-     ├── index.html  # Entry point of the app (mobile website)
-     ├── css/
-     │   └── index.css  # Stylesheet for the application
-     ├── js/
-     │   └── index.js  # JavaScript logic for the app
-     └── images/
-         └── logo.png  # Images used in the app
+     app/
+     ├── build/                     # Contains Gradle build outputs
+     └── src/                       # Contains source code and resources
+         ├── main/                  # Main source directory
+         │   ├── AndroidManifest.xml  # App's manifest file defining metadata and permissions
+         │   ├── java/              # Java/Kotlin source code for the app
+         │   └── res/               # Resources such as layouts, drawables, and values
+         └── build.gradle.kts       # Gradle build configuration for the app
      ```
-   - This folder is essential for Cordova projects as the web-based app is loaded from here 
+   - This directory is the core of the native application development process, housing both configuration files and source code 
 
-2. **`platforms/`**
-   - Contains platform-specific builds for Android and iOS after adding platforms using Cordova.
+2. **`gradle/`**
+   - Contains Gradle wrapper configuration files that manage project dependencies and build scripts.
    - Example:
      ```
-     platforms/
-     ├── android/
-     │   └── app/
-     │       └── build/
-     │           └── outputs/
-     │               └── apk/
-     │                   └── debug/
-     │                       └── app-debug.apk  # Generated APK file for Android deployment
-     └── ios/
+     gradle/
+     └── wrapper/
+         └── libs.versions.toml  # Defines dependency versions for the project
      ```
-   - The folder structure here is generated automatically by Cordova and Android Studio during the build process
-  
-3. **`plugins/`**
-   - Stores Cordova plugins that extend the app's functionality, such as access to native device features (e.g., camera, GPS).
+   - The `libs.versions.toml` file allows for centralized dependency management, making updates and changes to libraries easier 
+
+3. **`.git/`**
+   - The Git directory used for version control. It tracks changes, branches, and commits throughout the project lifecycle.
+   - Example structure:
+     ```
+     .git/
+     ├── branches/
+     ├── hooks/
+     ├── objects/
+     └── refs/
+     ```
+   - This folder is automatically created when initializing a Git repository and is essential for collaboration and version tracking
+
+4. **`.idea/`**
+   - Contains IntelliJ IDEA project configuration files.
    - Example:
      ```
-     plugins/
-     ├── cordova-plugin-device/
-     ├── cordova-plugin-network-information/
-     └── cordova-plugin-whitelist/
+     .idea/
+     ├── caches/
+     ├── workspace.xml
+     └── other-config-files.xml
      ```
-   - Plugins are optional and can be added using commands like `cordova plugin add` 
+   - These files store IDE-specific settings, such as caching and project metadata. They are useful for maintaining a consistent environment but should be excluded from version control when not collaborating on the same IDE 
 
-4. **`config.xml`**
-   - The Cordova configuration file that defines the app's metadata, permissions, and platform-specific settings.
-   - It includes app details like name, version, and author 
+5. **`build.gradle.kts`**
+   - The project-level Gradle build file, written in Kotlin DSL, which defines build settings and dependencies for the entire project.
+   - This file is essential for configuring how the project is built and tested 
 
-5. **`package.json`**
-   - The Node.js package file that manages dependencies and scripts required for the project.
+6. **`settings.gradle.kts`**
+   - Specifies the project structure and settings for Gradle. It lists the included modules and their configurations.
+
+7. **`README.md`**
+   - Contains project documentation, including an overview, setup instructions, and usage details.
+   - This file is the main guide for contributors and users of the project, providing essential information for understanding and working with the repository 
+
+8. **`.gitignore`**
+   - Specifies files and directories to exclude from version control.
    - Example:
-     ```json
-     {
-       "name": "mobile-app-project",
-       "version": "1.0.0",
-       "dependencies": {
-         "cordova": "^11.0.0"
-       }
-     }
      ```
-
-6. **`README.md`**
-   - The project documentation file that provides an overview, setup instructions, and usage details for the app.
-
-7. **`.gitignore`**
-   - Specifies files and folders to ignore in the Git repository, such as `node_modules/` and `platforms/` directories.
+     .gitignore
+     ├── /build/
+     ├── /.idea/
+     ├── /node_modules/
+     └── *.apk
+     ```
+   - Ensures unnecessary files, such as build outputs, IDE configuration files, and sensitive data, are not tracked in Git 
 
 ## Android Studio-Specific Structure (for Native Apps)
 If building directly with Android Studio, the structure under the `android/` directory will include:
