@@ -107,6 +107,9 @@ cordova platform add ios
   }
 }
 ```
+### JDK Requirements
+- Ensure you have JDK 11 or JDK 17 installed.
+- Set the 'JAVA_HOME' environment variable to the JDK installation path.
 
 ### Testing and Deployment
 1. Test your app on both web browsers and mobile devices:
