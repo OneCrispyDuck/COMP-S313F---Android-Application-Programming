@@ -1,0 +1,45 @@
+<resources>
+    <string name="google_maps_key">AIzaSyDeZLXmQFT4kQTVQh6MUw4--1xYvRqRzy8</string>
+    <string name="app_name">Route Finder</string>
+
+    <!-- Fragment: Route -->
+    <string name="start_point">Enter Start Point</string>
+    <string name="end_point">Enter Destination</string>
+    <string name="search_route">Search Route</string>
+    <string name="ai_recommendation">Get AI Travel Recommendation</string>
+    <string name="invalid_start">Invalid start station</string>
+    <string name="invalid_end">Invalid destination station</string>
+    <string name="input_required">Please enter a destination first</string>
+    <string name="route_not_found">No suitable bus route found</string>
+    <string name="parsing_error">Error parsing data</string>
+
+    <!-- Fragment: MainMenu -->
+    <string name="route_search">Smart route query</string>
+    <string name="language_switch">Switch Language</string>
+
+    <string name="invalid_origin">Please enter a valid origin stop name</string>
+    <string name="invalid_destination">Please enter a valid destination stop name</string>
+    <string name="loading_route">Loading bus route, please wait…</string>
+    <string name="no_route_found">No suitable bus route found</string>
+    <string name="network_error">Unable to retrieve data. Please check your network.</string>
+    <string name="parse_error">Failed to parse data</string>
+    <string name="unknown_time">Unknown</string>
+    <string name="route">Route: </string>
+    <string name="depart">Departure: </string>
+    <string name="arrive">Arrival: </string>
+    <string name="arrival_time">Estimated Arrival: </string>
+    <string name="marker_start">Start</string>
+    <string name="marker_end">End</string>
+    <string name="total_time">Total Time</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="boarding">Board</string>
+    <string name="alighting">Alight</string>
+    <string name="searching_route">Searching for route...</string>
+    <string name="select_start_end">Please select start and end point</string>
+
+    <!-- Fragment: AI -->
+    <string name="back">Back</string>
+    <string name="ai_loading">🌐 Loading AI recommendations, please wait…</string>
+    <string name="ai_recommend">AI Suggestion</string>
+    <string name="select_transport_mode">Select Transport Mode</string>
+</resources>

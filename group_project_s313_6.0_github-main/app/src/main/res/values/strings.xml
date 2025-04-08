@@ -1,0 +1,45 @@
+<resources>
+    <string name="google_maps_key">AIzaSyDeZLXmQFT4kQTVQh6MUw4--1xYvRqRzy8</string>
+    <string name="app_name">路线查询App</string>
+
+    <!-- Fragment: Route -->
+    <string name="start_point">输入起点</string>
+    <string name="end_point">输入目的地</string>
+    <string name="search_route">搜索路线</string>
+    <string name="ai_recommendation">获取AI旅游推荐</string>
+    <string name="invalid_start">无效的起点站名</string>
+    <string name="invalid_end">无效的终点站名</string>
+    <string name="input_required">请先输入目的地</string>
+    <string name="route_not_found">未找到合适的公交路线</string>
+    <string name="parsing_error">解析数据出错</string>
+    <!-- Fragment: MainMenu -->
+    <string name="route_search">智能路线查询</string>
+    <string name="language_switch">切换语言</string>
+
+    <string name="invalid_origin">请输入有效的起点站名</string>
+    <string name="invalid_destination">请输入有效的目的地站名</string>
+    <string name="loading_route">正在加载公交路线，请稍候…</string>
+    <string name="no_route_found">未找到合适的公交路线</string>
+    <string name="network_error">无法获取数据，请检查网络</string>
+    <string name="parse_error">解析数据出错</string>
+    <string name="unknown_time">未知</string>
+    <string name="route">路线: </string>
+    <string name="depart">上车站: </string>
+    <string name="arrive">下车站: </string>
+    <string name="arrival_time">预计到达: </string>
+    <string name="marker_start">起点</string>
+    <string name="marker_end">终点</string>
+    <string name="total_time">总时间</string>
+    <string name="total_distance">总距离</string>
+    <string name="boarding">上车</string>
+    <string name="alighting">下车</string>
+    <string name="searching_route">正在搜索路线...</string>
+    <string name="select_start_end">请先选择起点和终点</string>
+
+    <!-- Fragment: AI -->
+    <string name="back">返回</string>
+    <string name="ai_loading">🌐 正在加载 AI 推荐内容，请稍候…</string>
+    <string name="ai_recommend">AI 推荐</string>
+    <string name="select_transport_mode">选择交通方式</string>
+
+</resources>

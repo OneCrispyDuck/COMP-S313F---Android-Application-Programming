@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <!-- 主菜单 -->
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.group_project_s313.MainMenuFragment"
+        android:label="主菜单"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_to_route"
+            app:destination="@id/routeFragment"/>
+        <action
+            android:id="@+id/action_to_ai"
+            app:destination="@id/aiFragment"/>
+    </fragment>
+
+    <!-- 路线查询页面 -->
+    <fragment
+        android:id="@+id/routeFragment"
+        android:name="com.example.group_project_s313.RouteFragment"
+        android:label="路线查询"
+        tools:layout="@layout/fragment_route">
+        <action
+            android:id="@+id/action_route_to_ai"
+            app:destination="@id/aiFragment"/>
+    </fragment>
+
+    <!-- AI推荐页面 -->
+    <fragment
+        android:id="@+id/aiFragment"
+        android:name="com.example.group_project_s313.AIRecommendationFragment"
+        android:label="AI推荐"
+        tools:layout="@layout/fragment_ai">
+        <argument
+            android:name="destination"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

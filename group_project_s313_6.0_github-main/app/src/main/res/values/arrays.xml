@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transport_modes">
+        <item>公交（transit）</item>
+        <item>驾车（driving）</item>
+        <item>步行（walking）</item>
+        <item>地铁（subway）</item>
+    </string-array>
+</resources>
