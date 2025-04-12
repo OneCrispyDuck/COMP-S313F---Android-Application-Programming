@@ -14,9 +14,7 @@
         <action
             android:id="@+id/action_to_route"
             app:destination="@id/routeFragment"/>
-        <action
-            android:id="@+id/action_to_ai"
-            app:destination="@id/aiFragment"/>
+
     </fragment>
 
     <!-- 路线查询页面 -->

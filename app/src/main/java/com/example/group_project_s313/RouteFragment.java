@@ -1,5 +1,7 @@
 package com.example.group_project_s313;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;

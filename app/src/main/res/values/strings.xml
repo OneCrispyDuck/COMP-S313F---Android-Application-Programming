@@ -14,7 +14,7 @@
     <string name="parsing_error">解析数据出错</string>
     <!-- Fragment: MainMenu -->
     <string name="route_search">智能路线查询</string>
-    <string name="language_switch">切换语言</string>
+    <string name="language_switch">Switch Language</string>
 
     <string name="invalid_origin">请输入有效的起点站名</string>
     <string name="invalid_destination">请输入有效的目的地站名</string>

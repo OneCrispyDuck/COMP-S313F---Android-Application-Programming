@@ -1,6 +1,6 @@
 <resources>
     <string name="google_maps_key">AIzaSyDeZLXmQFT4kQTVQh6MUw4--1xYvRqRzy8</string>
-    <string name="app_name">MYB-MyBUS</string>
+    <string name="app_name">Route Finder</string>
 
     <!-- Fragment: Route -->
     <string name="start_point">Enter Start Point</string>
@@ -15,7 +15,7 @@
 
     <!-- Fragment: MainMenu -->
     <string name="route_search">Smart route query</string>
-    <string name="language_switch">Switch Language</string>
+    <string name="language_switch">切换语言</string>
 
     <string name="invalid_origin">Please enter a valid origin stop name</string>
     <string name="invalid_destination">Please enter a valid destination stop name</string>

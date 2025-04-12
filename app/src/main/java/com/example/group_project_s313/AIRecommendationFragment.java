@@ -11,7 +11,7 @@ import okhttp3.*;
 import org.json.*;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Locale;
 
 public class AIRecommendationFragment extends Fragment {
 
@@ -46,7 +46,7 @@ public class AIRecommendationFragment extends Fragment {
         String apiKey = "sk-oc1GhqILDr49mChvU5vEIaHmRzc42LPYhMsmsWPpo1YpEeTF"; // ⚠️ 建议放入安全配置中
 
         try {
-            String lang = getResources().getConfiguration().getLocales().get(0).getLanguage();
+            String lang = getCurrentLanguageTag(); // 使用新方法获取语言标签
 
             String locationInfo = "";
             if (lat != 0.0 && lng != 0.0) {
@@ -134,5 +134,16 @@ public class AIRecommendationFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         client.dispatcher().cancelAll();
+    }
+
+    // 获取当前系统语言的语言标签
+    private String getCurrentLanguageTag() {
+        Locale locale;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            locale = getResources().getConfiguration().getLocales().get(0);
+        } else {
+            locale = getResources().getConfiguration().locale;
+        }
+        return locale.toLanguageTag(); // 如 "en", "zh-CN"
     }
 }
